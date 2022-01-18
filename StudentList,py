@@ -1,0 +1,15 @@
+STUDENT=5  # 학생 수를 상수로 지정
+stdlist=[] # 학생에 대한 리스트 생성
+
+sum=0  # 합 저장
+score_80=0  # 80점 이상 학생 수
+
+for i in range(0,STUDENT):  # 학생 수 만큼 반복
+  score=int(input("성적을 입력하세요:"))  # 입력 받기
+  stdlist.append(score)  # 리스트에 추가하기
+  sum+=score  # 합계 계산
+  if score>=80:  # 80점 이상일 때
+    score_80+=1  # 1명 증가
+
+print("성적 평균은 %.1f 입니다."%int(sum/STUDENT))   # 평균 출력
+print("80점 이상 성적을 받은 학생은 %d 명입니다."%score_80)  # 80점 이상 학생 수 출력
