@@ -1,0 +1,10 @@
+# 패키지 : 함수의 집합
+# 모듈 : 패키지 내 비슷한 함수들의 집합
+# 단위 크키 순서: 패키지 > 모듈 > 함수
+# 패키지명.모듈명.함수명()꼴로 함수 사용
+import sklearn.metrics
+sklearn.metrics.accuracy_score()
+# 모듈명.함수명()꼴로 함수 사용
+metrics.accuracy_score()
+#함수명()꼴로 함수 사용
+accuracy_score()
